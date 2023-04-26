@@ -1,0 +1,86 @@
+/*$in@*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+:root {
+    --dark-purple: #c074f1;
+}
+.text-center{text-align: center}
+.radius-1rem{border-radius: 1rem}
+.radius-5px{border-radius: 5px}
+body {background: #dce9fc;}
+form {
+    background: #ddcdff;
+    width: 50%;
+    min-width: 32rem;
+    margin: 5rem auto;
+    border: 4px dashed var(--dark-purple);
+}
+.time{
+    background: var(--dark-purple);
+    color: white;
+    width: 12rem;
+    font-size: 46px;
+    margin:3rem auto 0;
+}
+#p-simple {
+    margin-top: 3rem;
+    font-size: 28px;
+    user-select: none;
+}
+
+#input-text {
+    margin: 1rem 0 2rem;
+    padding: 0 1rem;
+    outline: none;
+    width: 25rem;
+    height: 5rem;
+    font-size: 28px;
+    background: #fafafa;
+    border: 8px solid #c2c2c2;
+}
+.start{
+    display: block;
+    width: 18rem;
+    margin: 0 auto 2rem;
+    padding: 0.625rem;
+    border: 3px solid #ff931c;
+    background: #fade54;
+    color: #ff931c;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    pointer-events: none;
+}
+.end{
+    cursor: pointer;
+    pointer-events: auto;
+    font-size: 24px;
+}
+@media screen and (max-width: 580px) {
+    form{min-width: 90%;}
+    .time{
+        width: 10rem;
+        font-size: 38px;
+    }
+    #p-simple{
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+    #input-text{
+        width: 85%;
+        max-width: 21rem;
+        height: 4rem;
+        font-size: 15px;
+        padding: 0 0.5rem;
+    }
+    .start{
+        width: 11rem;
+        font-size: 16px;
+    }
+    .end{font-size: 12px;}
+}
