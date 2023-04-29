@@ -1,4 +1,3 @@
-//$in@
 let theInput, pText, timer, inputValue, pValue, pArray, inputArray, theButton, randomElement, x = 'isStart';
 const simpleText = ['its better to be safe than sorry', 'easy come easy go', 'blood is thicker than water', 'kill two birds with one stone', 'charity begins at home', 'barking dogs seldom bite', 'knowledge is power'];
 
@@ -59,14 +58,14 @@ function start() {
 function stopWatch() {
     let stopWatch, m = 0, mQ = 0, s = 0, sQ = 0, ms = 0, msQ = 0;
     stopWatch = setInterval(() => {
-        msQ += 1;
+        msQ++;
         ms = msQ;
         if (ms < 10) {
             ms = '0' + ms
         }
         if (msQ === 99) {
             msQ = 0;
-            sQ += 1;
+            sQ++;
         }
         s = sQ;
         if (s < 10) {
@@ -74,7 +73,7 @@ function stopWatch() {
         }
         if (sQ === 59) {
             sQ = 0;
-            mQ += 1;
+            mQ++;
         }
         m = mQ;
         if (m < 10) {
